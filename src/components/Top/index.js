@@ -1,22 +1,9 @@
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import React from "react";
+import { Text, View } from "react-native";
+import { Header } from "../Header";
 
-class Top extends Component {
+const Top = props => (
+  <Header />
+);
 
-  constructor(props){
-    super(props)
-
-  }
-
- render(){
-   return(
-     <View>
-       <Text>
-         Hello World
-       </Text>
-     </View>
-   );
-  }
- }
-
-export default Top;
+export { Top }
