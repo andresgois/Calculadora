@@ -1,22 +1,14 @@
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { Visor } from '../Visor';
 
-class Result extends Component {
+const Result = (props) => (
+  <Visor style={styles.container} />
+);
 
-  constructor(props){
-    super(props)
-
+const styles = StyleSheet.create({
+  container: {
   }
+})
 
- render(){
-   return(
-     <View>
-       <Text>
-         Hello World
-       </Text>
-     </View>
-   );
-  }
- }
-
-export default Result;
+export {Result};
