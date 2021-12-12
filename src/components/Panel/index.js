@@ -1,22 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Text, View } from 'react-native';
+import { Comando } from './Comando';
+import Entrada from './Entrada';
+import Operacao from './Operacao';
 
-class Panel extends Component {
+const Panel = (props) => (
+  <View>
+    <Entrada />
+    <Operacao />
+    <Comando />
+  </View>
+);
 
-  constructor(props){
-    super(props)
-
-  }
-
- render(){
-   return(
-     <View>
-       <Text>
-         Hello World
-       </Text>
-     </View>
-   );
-  }
- }
-
-export default Panel;
+export {Panel};
