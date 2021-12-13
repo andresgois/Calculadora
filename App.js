@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Index from './src/components';
+import IndexComponente from './src/components/IndexComponente';
 
 class App extends Component {
   constructor(props){
@@ -8,7 +8,7 @@ class App extends Component {
 
  render(){
    return(
-     <Index />
+     <IndexComponente />
    );
   }
  }

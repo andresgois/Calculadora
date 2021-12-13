@@ -1,30 +1,33 @@
 import React, { Component} from 'react';
 import { StyleSheet, TextInput, View } from 'react-native';
 
-class Numero extends Component {
+export default class Visor extends Component {
+
   constructor(props){
-    super(props);
+    super(props)
+    this.state = {
+      resultado: ''
+    }
   }
 
   render(){
     return(
       <View>
         <TextInput 
-          style={styles.Numero}
-          value={this.props.num}
+          style={styles.visor}
+          placeholder='Resultado'
+          editable={true}
+          value={this.state.resultado}
         />
       </View>
     );
   }
-} 
+}
 
 const styles = StyleSheet.create({
-  Numero: {
-    height: 80,
-    width: 140,
-    fontSize: 20,
+  visor: {
+    height: 100,
+    fontSize: 30,
     borderBottomWidth: 0.5,
   },
 })
-
-export default Numero;

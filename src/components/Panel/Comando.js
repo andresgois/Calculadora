@@ -1,17 +1,27 @@
-import React from 'react';
-import { Button, StyleSheet, Text, TouchableHighlight, View } from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, Button} from 'react-native';
 
-const Comando = (props) => (
-  <Button 
-    styles={styles.btn}
-    title='Calcular'
-  />
-);
+class Comando extends Component {
+  constructor(props){
+    super(props)
+  }
+
+ render(){
+   return(
+    <Button 
+      styles={styles.btn}
+      title='Calcular'
+      onPress={this.props.acao}
+    />
+   );
+  }
+ }
+
+export default Comando;
+
 
 const styles = StyleSheet.create({
   btn: {
     height: 120,
   },
-})
-
-export {Comando};
+});
