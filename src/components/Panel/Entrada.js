@@ -10,8 +10,8 @@ class Entrada extends Component {
  render(){
    return(
      <View style={styles.container}>
-       <Numero num={this.props.num1} />
-       <Numero num={this.props.num2} />
+       <Numero num={this.props.num1} atualizaValor={this.props.atualizaValor} name='num1' />
+       <Numero num={this.props.num2} atualizaValor={this.props.atualizaValor} name='num2' />
      </View>
    );
   }
