@@ -16,3 +16,7 @@
 ### Controle de variáveis
 
 ![Arvore do Componentes](./assets/imgs/arvore_dos_componentes.png)
+
+### Estrutura final do projeto
+
+![Arvore do Componentes](./assets/imgs/Estrutura_final.png)
