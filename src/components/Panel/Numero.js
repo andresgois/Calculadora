@@ -12,6 +12,7 @@ class Numero extends Component {
         <TextInput 
           style={styles.Numero}
           value={this.props.num}
+          onChangeText={ valorCampo => this.props.atualizaValor(this.props.name, valorCampo)}
         />
       </View>
     );
