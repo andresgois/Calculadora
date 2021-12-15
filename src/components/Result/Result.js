@@ -9,7 +9,10 @@ class Result extends Component {
 
  render(){
    return(
-    <Visor style={styles.container} />
+    <Visor 
+      style={styles.container} 
+      resultado={this.props.resultado}
+    />
    );
   }
  }
