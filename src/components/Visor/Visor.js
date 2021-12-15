@@ -17,7 +17,7 @@ export default class Visor extends Component {
           style={styles.visor}
           placeholder='Resultado'
           editable={true}
-          value={this.state.resultado}
+          value={this.props.resultado}
         />
       </View>
     );
