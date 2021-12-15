@@ -5,22 +5,20 @@ import Operacao from './Operacao';
 import Comando from './Comando';
 
 class Panel extends Component {
-  constructor(props){
-    super(props);
-
-    this.state = {num1: '', num2: ''}
-  }
-
-  calcular(){
-    alert('oi')
-  }
-
   render(){
     return(
       <View>
-        <Entrada num1={this.state.num1} num2={this.state.num2} />
-        <Operacao />
-        <Comando acao={this.calcular} />
+        <Entrada 
+          num1={this.props.num1} 
+          num2={this.props.num2} 
+          atualizaValor={this.props.atualizaValor}
+        />
+        <Operacao 
+          operacao={this.props.operacao} 
+          atualizaOperacao={this.props.atualizaOperacao} 
+        />
+        
+        <Comando acao={this.props.calcular} />
       </View>
     );
   }
